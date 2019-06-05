@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ardoise Magique</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+    <!-- Classes -->
+    <script src="js/classes/ColorPicker.class.js"></script>
+    <script src="js/classes/Pen.class.js"></script>
+    <script src="js/classes/Slate.class.js"></script>
+    <script src="js/classes/Program.class.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div>
+                <h1><i class="fa fa-paint-brush"></i>Ardoise Magique</h1>
+
+                <canvas id="slate" width="400" height="400"></canvas>
+                <canvas id="colorpalette" width="150" height="150" class="hide" ></canvas>
+            </div>
+        
+            <div class="menu">
+                <nav>
+                    <!-- <p>Outils</p> -->
+                    <p>Effacer</p>
+                    <button id="gomme"><i class="fa fa-eraser"></i></button>  
+                    <!-- <button id="pipette"><i class="fa fa-eyedropper"></i></button> -->
+                    
+                    <p>Couleur</p>
+                    <div class="colors">
+                        <div class="color black" data-color='black'></div>
+                        <div class='color bordeau' data-color='#5C2121'></div>
+                        <div class='color rouge' data-color='#B9121B'></div>
+                        <div class='color jaune' data-color='#FFBD07'></div>
+                        <div class='color vert' data-color='#13B813'></div>
+                        <div class='color bleuciel' data-color='#029E9A'></div>
+                        <div class='color bleu' data-color='#0378A6'></div>
+                    </div>
+                    
+                    <p>Epaisseur</p>
+                    <button class='size' data-size='1'>Fin</button>
+                    <button class='size'data-size='2'>Normal</button>
+                    <button class='size'data-size='3'>Epais</button>
+                </nav>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
